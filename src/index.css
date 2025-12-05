@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: app background + font tweaks */
-body {
-  @apply bg-slate-950 text-slate-100;
+/* Default prose (light) */
+.prose {
+  @apply text-slate-900;
 }
 
-/* Make prose look nice in dark mode */
-.prose {
+/* Dark mode prose */
+.dark .prose {
   @apply text-slate-100;
 }
+
 .prose a {
-  @apply text-blue-400 underline;
+  @apply underline;
+}
+
+.dark .prose a {
+  @apply text-blue-400;
 }
